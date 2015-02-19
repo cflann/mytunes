@@ -14,10 +14,10 @@ var AppView = Backbone.View.extend({
   },
 
   render: function(){
+    var sideBar = $('<div></div>').addClass('sidebar-right').append([this.playerView.$el, this.songQueueView.$el]);
     return this.$el.html([
-      this.playerView.$el,
       this.libraryView.$el,
-      this.songQueueView.$el
+      sideBar
     ]);
   }
 
