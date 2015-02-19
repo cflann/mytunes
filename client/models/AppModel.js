@@ -24,11 +24,12 @@ var AppModel = Backbone.Model.extend({
       // }
     }, this);
 
-    this.get('songQueue').on('ended', function() {
-      this.get('songQueue').shift();
-      var next = this.get('songQueue').at(0);
-      this.set('currentSong', next);
-    }, this);
+
+    // this.get('songQueue').on('ended', function() {
+    //   this.get('songQueue').shift();
+    //   // var next = this.get('songQueue').at(0);
+    //   // this.set('currentSong', next);
+    // }, this);
   }
 
 });
