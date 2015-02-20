@@ -18,7 +18,7 @@ var LibraryEntryView = Backbone.View.extend({
   },
 
   render: function(){
-    return this.$el.html(this.template(this.model.attributes));
+    return this.$el.addClass('animated fadeInUp').html(this.template(this.model.attributes));
   }
 
 });
